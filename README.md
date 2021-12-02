@@ -1,5 +1,6 @@
 # Materialui
-Android Application with Student Login using material ui
+Android Application with Student Login using material ui.
+
 What is Material ui?
 Material-UI is simply a library that allows us to import and use different components to create a user interface in our React applications. 
 This saves a significant amount of time since the developers do not need to write everything from scratch.
