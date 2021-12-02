@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:src="@drawable/account"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/red"
+        android:textSize="50dp"
+        android:textStyle="italic|bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/accountbox"
+            android:layout_margin="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            app:counterEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et1"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter username:"
+                android:inputType="textPersonName"
+                android:textColorHint="#FF0077"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pwd"
+            android:layout_margin="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            app:counterEnabled="true"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et2"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="Enter Your Password:"
+                android:maxLength="12"
+                android:inputType="textPersonName"
+                android:textColorHint="#FF0077"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pwd2"
+            android:layout_margin="10dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            app:counterEnabled="true"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et3"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter Confirm password:"
+                android:maxLength="12"
+                android:inputType="textPersonName"
+                android:textColor="#FF0077"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login" />
+
+
+
+
+</LinearLayout>
